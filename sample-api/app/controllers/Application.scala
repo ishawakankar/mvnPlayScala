@@ -34,10 +34,10 @@ class Application @Inject() (system: ActorSystem) extends Controller {
 
 //  val healthCheckActor = system.actorOf(Props[HealthCheckAPIService].withRouter(FromConfig()), name = "healthCheckActor")
 
-  val helloActor = system.actorOf(Props(new APIService(RestUtil)), "helloActor")
+  val APIActor = system.actorOf(Props(new APIService(RestUtil)), "APIActor")
 
   def getAPIMessage() = Action.async { implicit request =>
-    val result = ask(helloActor, None).mapTo[String]
+    val result = ask(APIActor, None).mapTo[String]
     result.map { x =>
       Ok(x).withHeaders(CONTENT_TYPE -> "text/plain")
     }

@@ -939,3 +939,6 @@ Caused by: com.google.inject.ConfigurationException: Guice configuration errors:
 2019-08-13 12:21:42,912 [WARN] from application in main - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
 2019-08-13 12:21:43,430 [INFO] from play.api.Play in main - Application started (Prod)
 2019-08-13 12:21:43,513 [INFO] from play.core.server.NettyServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2019-08-13 12:33:23,593 [WARN] from application in main - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2019-08-13 12:33:24,205 [INFO] from play.api.Play in main - Application started (Prod)
+2019-08-13 12:33:24,305 [INFO] from play.core.server.NettyServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
